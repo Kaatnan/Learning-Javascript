@@ -28,11 +28,15 @@
               <!-- form start -->
 
               {{> messages}}
-              <form role="form" id="quickForm" method="POST" action="/post/add">
+              <form role="form" id="quickForm" method="POST" action="/post/add" enctype="multipart/form-data">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Post Name</label>
                     <input type="text" name="post_name" class="form-control" id="exampleInputEmail1" placeholder="enter post">
+                  </div>
+                                    <div class="form-group">
+                    <label for="exampleInputEmail1">Post Image</label>
+                    <input type="file" name="post_image" class="form-control-file" id="exampleInputEmail1" placeholder="enter post">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputDescription">Post Description</label>
